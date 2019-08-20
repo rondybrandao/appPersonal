@@ -1,1 +1,10 @@
+ion-toolbar {
+  --background: url('../../assets/scale.jpg') no-repeat center center / cover;
+  -webkit-background-size: cover;
+  color: black;
+  font-family: fantasy;  
+}
 
+ion-content {
+    --background: url('/assets/bg.jpg') no-repeat center center / cover;
+  }

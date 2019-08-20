@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-item class="close-fake" lines="none" text-center>
+    <ion-button (click)="close()" fill="clear" color="light">
+      <ion-icon name="close" slot="start"></ion-icon>
+      Fechar
+    </ion-button>
+  <!--
+    <ion-button (click)="zoom(true)" fill="clear" color="light">
+      <ion-icon name="add" slot="start"></ion-icon>
+      aumentar
+    </ion-button>
+
+    <ion-button (click)="zoom(false)" fill="clear" color="light">
+      <ion-icon name="remove" slot="start"></ion-icon>
+      diminuir
+    </ion-button>
+    -->
+  </ion-item>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-slides [options]="sliderOpts" #slider>
+    <ion-slide>
+      <div class="swiper-zoom-container">
+        <img src="assets/foto-progress/{{ img }}.jpg">
+      </div>
+    </ion-slide>
+  </ion-slides>
+
+</ion-content>
